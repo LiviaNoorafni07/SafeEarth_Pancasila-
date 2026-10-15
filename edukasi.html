@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pelajari cara mengelola sampah melalui artikel, video tutorial, dan panduan daur ulang dari Bardukari.">
+
+    <title>Edukasi Lingkungan | Bardukari</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/edukasi.css">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                <i class="ri-recycle-line"></i>
+            </div>
+            <span>Bardukari</span>
+        </a>
+
+        <div class="sidebar-label">MENU UTAMA</div>
+
+        <nav class="sidebar-menu">
+            <a href="index.html" class="menu-item">
+                <i class="ri-home-5-line"></i>
+                <span>Beranda</span>
+            </a>
+
+            <a href="edukasi.html" class="menu-item active">
+                <i class="ri-book-open-line"></i>
+                <span>Edukasi</span>
+            </a>
+
+            <a href="#artikel" class="menu-item">
+                <i class="ri-article-line"></i>
+                <span>Artikel</span>
+            </a>
+
+            <a href="#video" class="menu-item">
+                <i class="ri-play-circle-line"></i>
+                <span>Video Tutorial</span>
+            </a>
+
+            <a href="#panduan" class="menu-item">
+                <i class="ri-seedling-line"></i>
+                <span>Panduan Daur Ulang</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="sidebar-illustration">
+                <!-- //?// ILUSTRASI TANAMAN ATAU BUMI -->
+                <i class="ri-plant-line"></i>
+            </div>
+            <h4>Mulai dari hal kecil!</h4>
+            <p>Langkah sederhana hari ini dapat membantu mengurangi sampah.</p>
+        </div>
+
+        <a href="#tentang" class="about-link">
+            <i class="ri-information-line"></i>
+            Tentang Bardukari
+        </a>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+        <header class="topbar">
+
+            <button class="menu-toggle" id="menu-toggle"
+                    aria-label="Buka menu navigasi"
+                    aria-expanded="false">
+                <i class="ri-menu-line"></i>
+            </button>
+
+            <div class="breadcrumb">
+                <span>Beranda</span>
+                <i class="ri-arrow-right-s-line"></i>
+                <strong>Edukasi</strong>
+            </div>
+
+            <a href="#artikel" class="topbar-link">
+                Jelajahi Artikel
+                <i class="ri-arrow-right-line"></i>
+            </a>
+
+        </header>
+
+
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+
+            <div class="hero-text">
+                <span class="section-tag">
+                    <i class="ri-leaf-line"></i>
+                    RUANG BELAJAR BARDUKARI
+                </span>
+
+                <h1>
+                    Kenali Sampah,<br>
+                    Mulai <span>Perubahan.</span>
+                </h1>
+
+                <p>
+                    Temukan informasi, panduan, dan tutorial sederhana
+                    untuk mengelola sampah menjadi sesuatu yang lebih
+                    bermanfaat bagi lingkungan.
+                </p>
+
+                <a href="#artikel" class="primary-button">
+                    Mulai Belajar
+                    <i class="ri-arrow-down-line"></i>
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <!-- //?// FOTO UTAMA EDUKASI LINGKUNGAN -->
+                <div class="hero-image-placeholder">
+                    <i class="ri-image-line"></i>
+                    <span>Foto Edukasi Lingkungan</span>
+                </div>
+
+                <div class="hero-image-caption">
+                    <i class="ri-recycle-line"></i>
+                    <div>
+                        <strong>Kelola dengan Bijak</strong>
+                        <span>Mulai dari lingkungan sendiri</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- SEARCH -->
+        <section class="search-section">
+
+            <div class="search-heading">
+                <h2>Apa yang ingin kamu pelajari?</h2>
+                <p>Cari informasi seputar sampah dan daur ulang.</p>
+            </div>
+
+            <form class="search-box" id="search-form">
+                <i class="ri-search-line"></i>
+
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder="Cari artikel, tutorial, atau panduan..."
+                    aria-label="Cari artikel dan tutorial"
+                >
+
+                <button type="submit">Cari</button>
+            </form>
+
+        </section>
+
+
+        <!-- CATEGORY -->
+        <section class="category-section" id="panduan">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-tag">JELAJAHI TOPIK</span>
+                    <h2>Belajar Sesuai Kebutuhanmu</h2>
+                </div>
+            </div>
+
+            <div class="category-list">
+
+                <button class="category-card active" data-category="semua">
+                    <span class="category-icon">
+                        <i class="ri-apps-2-line"></i>
+                    </span>
+                    <span>Semua</span>
+                </button>
+
+                <button class="category-card" data-category="organik">
+                    <span class="category-icon organic">
+                        <i class="ri-plant-line"></i>
+                    </span>
+                    <span>Sampah Organik</span>
+                </button>
+
+                <button class="category-card" data-category="anorganik">
+                    <span class="category-icon inorganic">
+                        <i class="ri-recycle-line"></i>
+                    </span>
+                    <span>Sampah Anorganik</span>
+                </button>
+
+                <button class="category-card" data-category="daur-ulang">
+                    <span class="category-icon recycle">
+                        <i class="ri-scissors-cut-line"></i>
+                    </span>
+                    <span>Daur Ulang</span>
+                </button>
+
+                <button class="category-card" data-category="pengelolaan">
+                    <span class="category-icon management">
+                        <i class="ri-delete-bin-6-line"></i>
+                    </span>
+                    <span>Pengelolaan</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURED ARTICLE -->
+        <section class="featured-section">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-tag">REKOMENDASI</span>
+                    <h2>Artikel Pilihan</h2>
+                </div>
+            </div>
+
+            <article class="featured-card">
+
+                <div class="featured-image">
+                    <!-- //?// FOTO KOMPOS DARI SAMPAH ORGANIK -->
+                    <div class="image-placeholder">
+                        <i class="ri-image-line"></i>
+                        <span>Foto Pengolahan Sampah Organik</span>
+                    </div>
+                    <span class="image-label">Pilihan Editor</span>
+                </div>
+
+                <div class="featured-content">
+
+                    <span class="article-category">SAMPAH ORGANIK</span>
+
+                    <h3>
+                        Cara Mengolah Sampah Organik Menjadi Kompos
+                    </h3>
+
+                    <p>
+                        Sisa sayuran, kulit buah, dan daun kering dapat
+                        diolah menjadi kompos. Pelajari langkah dasar
+                        mengolah sampah organik dari rumah.
+                    </p>
+
+                    <div class="article-meta">
+                        <span>
+                            <i class="ri-time-line"></i>
+                            5 menit membaca
+                        </span>
+                        <span>
+                            <i class="ri-book-open-line"></i>
+                            Panduan
+                        </span>
+                    </div>
+
+                    <button
+                        class="text-button read-article"
+                        data-article="kompos">
+                        Baca Selengkapnya
+                        <i class="ri-arrow-right-line"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- VIDEO TUTORIAL -->
+        <section class="video-section" id="video">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-tag">BELAJAR VISUAL</span>
+                    <h2>Video Tutorial</h2>
+                    <p>Pelajari cara mengolah sampah melalui video.</p>
+                </div>
+
+                <a href="#video-list" class="view-all">
+                    Lihat Semua
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+
+            <div class="video-grid" id="video-list">
+
+                <article class="video-card"
+                         data-category="organik"
+                         data-search="cara membuat kompos sampah organik sisa makanan">
+
+                    <button class="video-thumbnail video-placeholder"
+                            data-video="kompos"
+                            aria-label="Lihat tutorial membuat kompos">
+                        <!-- //?// THUMBNAIL VIDEO MEMBUAT KOMPOS -->
+                        <i class="ri-image-line"></i>
+                        <span>Thumbnail Video Kompos</span>
+                        <span class="play-button">
+                            <i class="ri-play-fill"></i>
+                        </span>
+                        <span class="video-duration">Tutorial</span>
+                    </button>
+
+                    <div class="video-info">
+                        <span class="article-category">ORGANIK</span>
+                        <h3>Cara Membuat Kompos dari Sampah Dapur</h3>
+                        <p>Kenali proses dasar mengolah sisa makanan.</p>
+                        <button class="text-button watch-video"
+                                data-video="kompos">
+                            Tonton Video
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="video-card"
+                         data-category="anorganik"
+                         data-search="cara memilah sampah plastik kertas logam rumah tangga">
+
+                    <button class="video-thumbnail video-placeholder"
+                            data-video="pilah"
+                            aria-label="Lihat tutorial memilah sampah">
+                        <!-- //?// THUMBNAIL VIDEO PEMILAHAN SAMPAH -->
+                        <i class="ri-image-line"></i>
+                        <span>Thumbnail Video Pemilahan</span>
+                        <span class="play-button">
+                            <i class="ri-play-fill"></i>
+                        </span>
+                        <span class="video-duration">Tutorial</span>
+                    </button>
+
+                    <div class="video-info">
+                        <span class="article-category">PEMILAHAN</span>
+                        <h3>Belajar Memilah Sampah dari Rumah</h3>
+                        <p>Bedakan sampah organik, anorganik, dan residu.</p>
+                        <button class="text-button watch-video"
+                                data-video="pilah">
+                            Tonton Video
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="video-card"
+                         data-category="daur-ulang"
+                         data-search="kerajinan daur ulang botol plastik barang bekas">
+
+                    <button class="video-thumbnail video-placeholder"
+                            data-video="kerajinan"
+                            aria-label="Lihat tutorial kerajinan daur ulang">
+                        <!-- //?// THUMBNAIL VIDEO KERAJINAN DAUR ULANG -->
+                        <i class="ri-image-line"></i>
+                        <span>Thumbnail Video Daur Ulang</span>
+                        <span class="play-button">
+                            <i class="ri-play-fill"></i>
+                        </span>
+                        <span class="video-duration">Tutorial</span>
+                    </button>
+
+                    <div class="video-info">
+                        <span class="article-category">DAUR ULANG</span>
+                        <h3>Membuat Kerajinan dari Barang Bekas</h3>
+                        <p>Manfaatkan barang bekas menjadi produk kreatif.</p>
+                        <button class="text-button watch-video"
+                                data-video="kerajinan">
+                            Tonton Video
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ARTICLE LIST -->
+        <section class="article-section" id="artikel">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-tag">TAMBAH PENGETAHUAN</span>
+                    <h2>Artikel Terbaru</h2>
+                    <p>Informasi sederhana untuk membantu menjaga lingkungan.</p>
+                </div>
+
+                <span class="article-count" id="article-count">
+                    6 Artikel
+                </span>
+            </div>
+
+
+            <div class="article-grid" id="article-grid">
+
+                <article class="article-card"
+                         data-category="organik"
+                         data-search="mengenal sampah organik contoh cara pengolahan">
+
+                    <div class="article-image">
+                        <!-- //?// FOTO SAMPAH ORGANIK -->
+                        <div class="image-placeholder">
+                            <i class="ri-image-line"></i>
+                            <span>Foto Sampah Organik</span>
+                        </div>
+                        <span class="image-label">Organik</span>
+                    </div>
+
+                    <div class="article-content">
+                        <span class="article-category">PENGETAHUAN DASAR</span>
+                        <h3>Mengenal Sampah Organik dan Cara Mengolahnya</h3>
+                        <p>
+                            Ketahui jenis sampah organik dan cara
+                            memanfaatkannya agar tidak terbuang percuma.
+                        </p>
+
+                        <div class="article-footer">
+                            <span><i class="ri-time-line"></i> 4 menit</span>
+                            <button class="icon-button read-article"
+                                    data-article="organik"
+                                    aria-label="Baca artikel sampah organik">
+                                <i class="ri-arrow-up-right-line"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <article class="article-card"
+                         data-category="anorganik"
+                         data-search="sampah plastik dampak lingkungan pengurangan plastik">
+
+                    <div class="article-image">
+                        <!-- //?// FOTO SAMPAH PLASTIK -->
+                        <div class="image-placeholder">
+                            <i class="ri-image-line"></i>
+                            <span>Foto Sampah Plastik</span>
+                        </div>
+                        <span class="image-label">Anorganik</span>
+                    </div>
+
+                    <div class="article-content">
+                        <span class="article-category">LINGKUNGAN</span>
+                        <h3>Mengapa Sampah Plastik Perlu Dikurangi?</h3>
+                        <p>
+                            Pelajari dampak sampah plastik dan kebiasaan
+                            yang bisa membantu menguranginya.
+                        </p>
+
+                        <div class="article-footer">
+                            <span><i class="ri-time-line"></i> 5 menit</span>
+                            <button class="icon-button read-article"
+                                    data-article="plastik"
+                                    aria-label="Baca artikel sampah plastik">
+                                <i class="ri-arrow-up-right-line"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <article class="article-card"
+                         data-category="pengelolaan"
+                         data-search="memilah sampah rumah tangga organik anorganik residu">
+
+                    <div class="article-image">
+                        <!-- //?// FOTO PEMILAHAN SAMPAH -->
+                        <div class="image-placeholder">
+                            <i class="ri-image-line"></i>
+                            <span>Foto Pemilahan Sampah</span>
+                        </div>
+                        <span class="image-label">Pengelolaan</span>
+                    </div>
+
+                    <div class="article-content">
+                        <span class="article-category">PANDUAN</span>
+                        <h3>Panduan Memilah Sampah Rumah Tangga</h3>
+                        <p>
+                            Mulai mengelompokkan sampah berdasarkan
+                            jenisnya sebelum dibuang atau diolah.
+                        </p>
+
+                        <div class="article-footer">
+                            <span><i class="ri-time-line"></i> 4 menit</span>
+                            <button class="icon-button read-article"
+                                    data-article="pilah"
+                                    aria-label="Baca panduan pemilahan sampah">
+                                <i class="ri-arrow-up-right-line"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <article class="article-card"
+                         data-category="daur-ulang"
+                         data-search="daur ulang barang bekas manfaat dan proses recycle">
+
+                    <div class="article-image">
+                        <!-- //?// FOTO PROSES DAUR ULANG -->
+                        <div class="image-placeholder">
+                            <i class="ri-image-line"></i>
+                            <span>Foto Daur Ulang</span>
+                        </div>
+                        <span class="image-label">Daur Ulang</span>
+                    </div>
+
+                    <div class="article-content">
+                        <span class="article-category">KREATIVITAS</span>
+                        <h3>Mengenal Daur Ulang dan Manfaatnya</h3>
+                        <p>
+                            Ketahui bagaimana barang bekas dapat
+                            diproses menjadi bahan atau produk baru.
+                        </p>
+
+                        <div class="article-footer">
+                            <span><i class="ri-time-line"></i> 5 menit</span>
+                            <button class="icon-button read-article"
+                                    data-article="daur-ulang"
+                                    aria-label="Baca artikel daur ulang">
+                                <i class="ri-arrow-up-right-line"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <article class="article-card"
+                         data-category="pengelolaan"
+                         data-search="bank sampah cara kerja menabung sampah manfaat masyarakat">
+
+                    <div class="article-image">
+                        <!-- //?// FOTO KEGIATAN BANK SAMPAH -->
+                        <div class="image-placeholder">
+                            <i class="ri-image-line"></i>
+                            <span>Foto Bank Sampah</span>
+                        </div>
+                        <span class="image-label">Bank Sampah</span>
+                    </div>
+
+                    <div class="article-content">
+                        <span class="article-category">MASYARAKAT</span>
+                        <h3>Mengenal Bank Sampah dan Cara Kerjanya</h3>
+                        <p>
+                            Pelajari bagaimana sampah terpilah dapat
+                            dikumpulkan dan memiliki nilai ekonomi.
+                        </p>
+
+                        <div class="article-footer">
+                            <span><i class="ri-time-line"></i> 5 menit</span>
+                            <button class="icon-button read-article"
+                                    data-article="bank-sampah"
+                                    aria-label="Baca artikel bank sampah">
+                                <i class="ri-arrow-up-right-line"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+
+                <article class="article-card"
+                         data-category="pengelolaan"
+                         data-search="mengurangi sampah plastik kebiasaan ramah lingkungan sehari hari">
+
+                    <div class="article-image">
+                        <!-- //?// FOTO GAYA HIDUP RAMAH LINGKUNGAN -->
+                        <div class="image-placeholder">
+                            <i class="ri-image-line"></i>
+                            <span>Foto Gaya Hidup Ramah Lingkungan</span>
+                        </div>
+                        <span class="image-label">Gaya Hidup</span>
+                    </div>
+
+                    <div class="article-content">
+                        <span class="article-category">TIPS HARIAN</span>
+                        <h3>5 Kebiasaan Sederhana untuk Mengurangi Sampah</h3>
+                        <p>
+                            Terapkan langkah kecil yang dapat dilakukan
+                            setiap hari untuk mengurangi sampah.
+                        </p>
+
+                        <div class="article-footer">
+                            <span><i class="ri-time-line"></i> 3 menit</span>
+                            <button class="icon-button read-article"
+                                    data-article="kebiasaan"
+                                    aria-label="Baca tips mengurangi sampah">
+                                <i class="ri-arrow-up-right-line"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="empty-state" id="empty-state" hidden>
+                <i class="ri-search-line"></i>
+                <h3>Konten tidak ditemukan</h3>
+                <p>Coba kata kunci atau kategori lainnya.</p>
+                <button class="primary-button" id="reset-search">
+                    Tampilkan Semua
+                </button>
+            </div>
+
+        </section>
+
+
+        <!-- CALL TO ACTION -->
+        <section class="cta-section" id="tentang">
+
+            <div class="cta-text">
+                <span class="section-tag">LANGKAH KECIL, DAMPAK NYATA</span>
+                <h2>Perubahan dimulai dari diri sendiri.</h2>
+                <p>
+                    Mulailah memilah, mengurangi, dan mengolah sampah
+                    dari lingkungan terdekatmu.
+                </p>
+                <a href="#panduan" class="cta-button">
+                    Jelajahi Panduan
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+
+            <div class="cta-image">
+                <!-- //?// FOTO ILUSTRASI BUMI HIJAU ATAU TANAMAN -->
+                <i class="ri-plant-line"></i>
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <a href="index.html" class="footer-logo">
+                <i class="ri-recycle-line"></i>
+                Bardukari
+            </a>
+
+            <p>
+                Edukasi pengelolaan sampah untuk lingkungan yang lebih baik.
+            </p>
+
+            <span>&copy; 2026 Bardukari. Semua hak dilindungi.</span>
+        </footer>
+
+    </main>
+
+
+    <!-- OVERLAY SIDEBAR MOBILE -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+
+    <!-- MODAL ARTIKEL -->
+    <div class="modal" id="article-modal"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="modal-title"
+         hidden>
+
+        <div class="modal-content">
+
+            <button class="modal-close" data-close-modal
+                    aria-label="Tutup artikel">
+                <i class="ri-close-line"></i>
+            </button>
+
+            <span class="article-category" id="modal-category">
+                EDUKASI
+            </span>
+
+            <h2 id="modal-title">Judul Artikel</h2>
+
+            <div class="modal-image">
+                <!-- //?// FOTO UTAMA ARTIKEL -->
+                <i class="ri-image-line"></i>
+                <span>Foto Artikel</span>
+            </div>
+
+            <div class="modal-body" id="modal-body"></div>
+
+        </div>
+    </div>
+
+
+    <!-- MODAL VIDEO -->
+    <div class="modal" id="video-modal"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="video-modal-title"
+         hidden>
+
+        <div class="modal-content video-modal-content">
+
+            <button class="modal-close" data-close-modal
+                    aria-label="Tutup video">
+                <i class="ri-close-line"></i>
+            </button>
+
+            <h2 id="video-modal-title">Video Tutorial</h2>
+
+            <p id="video-modal-description">
+                Pilih video tutorial untuk belajar mengolah sampah.
+            </p>
+
+            <div class="video-player" id="video-player">
+                <!-- Video YouTube akan dimuat melalui JavaScript -->
+            </div>
+
+            <p class="video-note">
+                Video akan ditampilkan di sini setelah ID video YouTube
+                ditambahkan pada bagian JavaScript.
+            </p>
+
+        </div>
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/edukasi.js"></script>
+
+</body>
+</html>

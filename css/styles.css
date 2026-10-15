@@ -161,12 +161,13 @@ header::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image:
+  /* background-image:
     linear-gradient(
       rgba(255, 255, 255, 0.3),
       rgba(255, 255, 255, 0.3)
     ),
-    var(--header-bg, url("assets/bg1.jpeg"));
+    var(--header-bg, url("assets/bg1.jpeg")); */
+  background-color: var(--primary-color);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -228,48 +229,116 @@ header::before {
   margin-inline-start: unset;
 }
 
+
+/* =========================
+   PERBAIKAN UKURAN KATALOG
+========================= */
+
+/* Mengatur jarak dan jumlah kartu katalog */
 .destination__grid {
-  margin-top: 4rem;
-  display: grid;
-  gap: 2rem 1rem;
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
 }
 
+/* Mengatur ukuran setiap kartu */
+.destination__card {
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 1.2rem;
+    background-color: var(--white);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.destination__card:hover {
+    transform: translateY(-5px);
+}
+
+/*//?//* GANTI GAMBAR DI SINI: ukuran gambar katalog */
 .destination__card img {
-  border-radius: 1.5rem;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: none;
 }
 
+/* Mengatur teks di bawah gambar */
 .destination__card__details {
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem;
 }
 
 .destination__card__details h4 {
-  margin-bottom: 5px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  columns: var(--text-dark);
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-dark);
 }
 
 .destination__card__details p {
-  columns: var(--text-light);
+    color: var(--text-light);
+    font-size: 0.85rem;
+    line-height: 1.5;
 }
 
 .destination__rating {
-  padding: 5px 10px;
-  font-size: 0.9rem;
-  white-space: nowrap;
-  color: var(--white);
-  background-color: var(--primary-color);
-  border-radius: 1rem;
-  transition: 0.3s;
+    flex-shrink: 0;
+    padding: 5px 9px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 1rem;
 }
 
-.destination__card:hover .destination__rating {
-  background-color: var(--primary-color-dark);
+/* Tablet */
+@media (max-width: 768px) {
+    .destination__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    .destination__card img {
+        height: 160px;
+    }
+}
+
+/* HP */
+@media (max-width: 480px) {
+    .destination__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.75rem;
+        margin-top: 1.5rem;
+    }
+
+    .destination__card img {
+        height: 115px;
+    }
+
+    .destination__card__details {
+        padding: 0.7rem;
+        gap: 0.4rem;
+    }
+
+    .destination__card__details h4 {
+        font-size: 0.85rem;
+    }
+
+    .destination__card__details p {
+        font-size: 0.75rem;
+    }
+
+    .destination__rating {
+        padding: 4px 7px;
+        font-size: 0.7rem;
+    }
 }
 
 .journey__grid {

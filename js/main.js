@@ -83,21 +83,21 @@ const swiper = new Swiper(".swiper", {
 });
 
 // Background slideshow header
-const header = document.querySelector("header");
+// const header = document.querySelector("header");
 
-const backgrounds = [
-  "assets/bg1.jpeg",
-  "assets/bg2.jpeg",
-  "assets/bg3.jpeg",
-];
+// const backgrounds = [
+//   "assets/bg1.jpeg",
+//   "assets/bg2.jpeg",
+//   "assets/bg3.jpeg",
+// ];
 
-let currentBackground = 0;
+// let currentBackground = 0;
 
-setInterval(() => {
-  currentBackground = (currentBackground + 1) % backgrounds.length;
+// setInterval(() => {
+//   currentBackground = (currentBackground + 1) % backgrounds.length;
 
-  header.style.setProperty(
-    "--header-bg",
-    `url("${backgrounds[currentBackground]}")`
-  );
-}, 4000);
+//   header.style.setProperty(
+//     "--header-bg",
+//     `url("${backgrounds[currentBackground]}")`
+//   );
+// }, 4000);
